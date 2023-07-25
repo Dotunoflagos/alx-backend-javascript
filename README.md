@@ -1,1 +1,1 @@
-alx-backend-javascript.git
+alx-backend-javascript.gi
