@@ -1,8 +1,8 @@
 export default function iterateThroughObject(reportWithIterator) {
   let string = '';
-  for (const employee of reportWithIterator) {
+  for (const [index, employee] of reportWithIterator.entries()) {
     string += employee;
-    if (reportWithIterator.indexOf(employee) < reportWithIterator.length - 1) {
+    if (index < reportWithIterator.length - 1) {
       string += ' | ';
     }
   }
