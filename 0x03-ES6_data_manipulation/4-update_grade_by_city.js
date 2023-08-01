@@ -3,7 +3,7 @@ export default function updateStudentGradeByCity(list, city, newGrade) {
     return [];
   }
   return list
-    .filter((listItem) => listItem.location === city)
+    .filter((listItems) => listItems.location === city)
     .map((listItem) => {
       listItem.grade = newGrade.map((gradeItem) => {
         if (gradeItem.studentId === listItem.id) {
