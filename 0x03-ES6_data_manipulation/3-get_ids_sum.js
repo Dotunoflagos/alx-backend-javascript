@@ -1,3 +1,3 @@
-function getStudentIdsSum(list) {
+export default function getStudentIdsSum(list) {
 
 }
