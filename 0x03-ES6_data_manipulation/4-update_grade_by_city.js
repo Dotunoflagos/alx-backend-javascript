@@ -5,13 +5,14 @@ export default function updateStudentGradeByCity(list, city, newGrade) {
   return list
     .filter((listItems) => listItems.location === city)
     .map((listItem) => {
-      listItem.grade = newGrade.map((gradeItem) => {
-        if (gradeItem.studentId === listItem.id) {
+      const listItemcopy = listItem;
+      listItemcopy.grade = newGrade.map((gradeItem) => {
+        if (gradeItem.studentId === listItemcopy.id) {
           return gradeItem.grade;
         }
         return 'N/A';
       }).pop();
 
-      return listItem;
+      return listItemcopy;
     });
 }
