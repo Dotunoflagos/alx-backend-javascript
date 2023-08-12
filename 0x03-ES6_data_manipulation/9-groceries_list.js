@@ -1,9 +1,9 @@
-export default function getStudentIdsSum(list) {
-    if (students instanceof Array) {
-        return students.reduce(
-          (prevStudent, curStudent) => prevStudent.id || prevStudent + curStudent.id,
-          0,
-        );
-      }
-      return 0;
+export default function groceriesList() {
+  const map = new Map();
+  map.set('Apples', 10);
+  map.set('Tomatoes', 10);
+  map.set('Pasta', 1);
+  map.set('Rice', 1);
+  map.set('Banana', 5);
+  return map;
 }
