@@ -1,9 +1,8 @@
-export default function getStudentIdsSum(list) {
-    if (students instanceof Array) {
-        return students.reduce(
-          (prevStudent, curStudent) => prevStudent.id || prevStudent + curStudent.id,
-          0,
-        );
-      }
-      return 0;
+export default function hasValuesFromArray(set, array) {
+  for (const element of array) {
+    if (!set.has(element)) {
+      return false;
+    }
+  }
+  return true;
 }
