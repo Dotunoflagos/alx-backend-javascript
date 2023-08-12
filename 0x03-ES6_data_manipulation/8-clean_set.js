@@ -1,9 +1,7 @@
-export default function getStudentIdsSum(list) {
-    if (students instanceof Array) {
-        return students.reduce(
-          (prevStudent, curStudent) => prevStudent.id || prevStudent + curStudent.id,
-          0,
-        );
-      }
-      return 0;
+export default function cleanSet(set, string) {
+  const matchingValues = Array.from(set)
+    .filter((value) => value.startsWith(string))
+    .map((value) => value.substring(string.length));
+
+  return matchingValues.join('-');
 }
