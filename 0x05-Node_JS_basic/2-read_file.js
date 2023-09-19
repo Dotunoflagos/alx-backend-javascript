@@ -23,7 +23,7 @@ function countStudents(path) {
     });
   } catch (error) {
     // Handle any errors that occur during the file read
-    throw new Error('Cannot load the database');
+    throw ('Cannot load the database');
   }
 }
 
