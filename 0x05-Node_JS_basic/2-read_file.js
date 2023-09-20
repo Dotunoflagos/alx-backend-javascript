@@ -10,7 +10,7 @@ function countStudents(path) {
     // count students
     const studentArray = fileContent.split('\n').slice(1);
     // Process the file content as needed
-    console.log('Number of students:', studentArray.length);
+    console.log(`Number of students: ${studentArray.length}`);
     const field = Array.from(
       new Set(studentArray.map((st) => st.split(',')[3])),
     );
