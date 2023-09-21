@@ -1,8 +1,8 @@
 {
   "name": "unittests_in_js",
   "version": "1.0.0",
-  "description": "A project for learning the basics of unittests in Node.js.",
-  "author": "Bezaleel Olakunori <bezaleeloci@gmail.com>",
+  "description": "",
+  "author": "",
   "private": true,
   "license": "MIT",
   "scripts": {
