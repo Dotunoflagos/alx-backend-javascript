@@ -6,7 +6,9 @@ function countStudents(path) {
     const filePath = path;
 
     // Read the file synchronously
-    const fileContent = fs.readFileSync(filePath, 'utf-8');
+    const fileContent = fs.readFileSync(filePath, 'utf-8')
+      .toString('utf-8')
+      .trim();
     // count students
     const studentArray = fileContent.split('\n').slice(1);
     // Process the file content as needed
