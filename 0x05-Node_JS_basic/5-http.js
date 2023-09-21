@@ -107,7 +107,7 @@ app.on('request', (req, res) => {
 });
 
 app.listen(PORT, HOST, () => {
-  process.stdout.write(`...`);
+  process.stdout.write('...');
 });
 
 module.exports = app;
