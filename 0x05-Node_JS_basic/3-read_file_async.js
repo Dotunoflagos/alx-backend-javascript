@@ -2,15 +2,16 @@ const fs = require('fs');
 
 function countStudents(path) {
   function process(err, fileContent) {
+    if (err) {
+      throw (new Error('Cannot load the database'));
+    }
     // count students
     const studentArray = fileContent
       .toString('utf-8')
       .trim()
       .split('\n')
       .slice(1);
-    if (err) {
-      reject(new Error('Cannot load the database'));
-    }
+
     // Process the file content as needed
     console.log(`Number of students: ${studentArray.length}`);
     const field = Array.from(
