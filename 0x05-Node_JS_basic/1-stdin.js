@@ -13,3 +13,7 @@ rl.on('line', (input) => {
     rl.close();
   });
 });
+
+rl.on('close', () => {
+  process.exit(0);
+});
