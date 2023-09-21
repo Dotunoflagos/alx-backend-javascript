@@ -23,6 +23,8 @@ function countStudents(path) {
       const list = studentArray.filter((st) => st.split(',')[3] === fl).map((st) => st.split(',')[0]);
       console.log(`Number of students in ${fl}: ${number}. List: ${list.join(', ')}`);
     });
+
+    resolve(true);
   } catch (error) {
     // Handle any errors that occur during the file read
     throw new Error('Cannot load the database');
